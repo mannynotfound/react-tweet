@@ -1,0 +1,46 @@
+{
+  "name": "react-tweet",
+  "version": "1.0.11",
+  "description": "React.js component for rendering tweets as they are presented on Twitter.com",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run prepublish",
+    "prepublish": "npm run build:js",
+    "build:js": "babel --loose all ./src/components -d ./lib",
+    "start": "webpack-dev-server --hot --inline",
+    "build-dev": "webpack -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artnotfound/react-tweet"
+  },
+  "author": "Manny404",
+  "license": "MIT",
+  "homepage": "http://art404.com",
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.11",
+    "babel-core": "^5.2.17",
+    "ejs": "^2.3.1",
+    "node-libs-browser": "^0.5.0",
+    "webpack": "~1.12.2",
+    "extract-text-webpack-plugin": "~0.8.2",
+    "babel-loader": "~5.3.2",
+    "css-loader": "^0.16.0",
+    "json-loader": "~0.5.3",
+    "react-hot-loader": "~1.3.0",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "webpack-dev-server": "~1.12.0"
+  },
+  "dependencies": {
+    "babel": "~5.8.23",
+    "babel-runtime": "~5.8.20",
+    "moment-twitter": "^0.2.0",
+    "react": "0.14.0",
+    "react-dom": "0.14.0",
+    "twemoji": "^1.4.1",
+    "twitter-text": "^1.13.2"
+  }
+}

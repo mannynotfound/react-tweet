@@ -1,0 +1,9 @@
+/.*
+!.gitignore
+!.npmignore
+/node_modules
+/npm-shrinkwrap.json
+lib
+dist
+.DS_STORE
+npm-debug.log
