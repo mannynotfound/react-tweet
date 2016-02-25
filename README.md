@@ -70,7 +70,7 @@ class MyTweetComponent extends React.Component {
 
 ## TODO:
   * Mobile style support
-  * Better video support, seems Twitter uses custom player
+  * ~~Better video support, seems Twitter uses custom player~~
   * Mimick video controls of Twitter.com
   * Add slideshow controls in Modal mode
   * Refactor how images get cropped, kind of a mess rn
