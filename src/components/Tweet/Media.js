@@ -2,7 +2,6 @@ import React from 'react'
 import Photos from './Photos'
 import Video from './Video'
 
-
 class Media extends React.Component {
   render () {
     switch (this.props.media[0].type) {
@@ -27,6 +26,5 @@ Media.defaultProps = {
 }
 
 Media.displayName = 'Media'
-
 
 export default Media
