@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './styles'
 
-
 class Context extends React.Component {
   render () {
     const {data} = this.props
@@ -29,6 +28,5 @@ Context.propTypes = {
 }
 
 Context.displayName = 'Context'
-
 
 export default Context

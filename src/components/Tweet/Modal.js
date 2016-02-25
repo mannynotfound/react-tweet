@@ -6,7 +6,6 @@ import Footer from './Footer'
 import styles from './styles'
 import {cloneDeep} from './utils'
 
-
 class Modal extends React.Component {
   constructor(props, context) {
     super(props, context)
@@ -108,6 +107,5 @@ Modal.defaultProps = {
   },
   'active': 0
 }
-
 
 export default Modal

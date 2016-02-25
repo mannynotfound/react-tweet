@@ -8,7 +8,6 @@ import Quote from './Quote'
 import Footer from './Footer'
 import styles from './styles'
 
-
 class Tweet extends React.Component {
   constructor (props) {
     super(props)
@@ -97,6 +96,5 @@ Tweet.defaultProps = {
     'user': {}
   }
 }
-
 
 export default Tweet

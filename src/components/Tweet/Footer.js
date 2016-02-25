@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './styles'
 
-
 class Footer extends React.Component {
   formatCount (count) {
     const readablize = num => {
@@ -74,6 +73,5 @@ Footer.propTypes = {
 }
 
 Footer.displayName = 'Footer'
-
 
 export default Footer

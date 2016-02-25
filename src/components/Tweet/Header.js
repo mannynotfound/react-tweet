@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './styles'
 import twemoji from 'twemoji'
 
-
 class Header extends React.Component {
   createTimestamp (time) {
     if (!time) return null
@@ -58,7 +57,6 @@ Header.defaultProps = {
 }
 
 Header.displayName = 'Header'
-
 
 export default Header
 

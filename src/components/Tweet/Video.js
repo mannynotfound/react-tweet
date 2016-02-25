@@ -37,5 +37,3 @@ Video.defaultProps = {
 Video.displayName = 'Video'
 
 export default Video
-
-

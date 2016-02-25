@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './styles'
 import Text from './Text'
 
-
 class Quote extends React.Component {
   render () {
     const {data} = this.props
@@ -29,7 +28,6 @@ Quote.propTypes = {
 }
 
 Quote.displayName = 'Quote'
-
 
 export default Quote
 

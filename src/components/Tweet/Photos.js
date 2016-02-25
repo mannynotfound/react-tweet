@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './styles'
 import {cloneDeep} from './utils'
 
-
 class Photos extends React.Component {
   constructor (props, context) {
     super(props, context)
@@ -210,7 +209,6 @@ Photos.propTypes = {
 }
 
 Photos.displayName = 'Photos'
-
 
 export default Photos
 

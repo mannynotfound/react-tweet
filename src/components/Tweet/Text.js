@@ -3,7 +3,6 @@ import styles from './styles'
 import twemoji from 'twemoji'
 import twitterText from 'twitter-text'
 
-
 class Text extends React.Component {
   render () {
     let {data} = this.props, {text, entities} = data
@@ -50,6 +49,5 @@ Text.propTypes = {
 }
 
 Text.displayName = 'Text'
-
 
 export default Text
