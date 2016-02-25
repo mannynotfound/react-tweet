@@ -1,6 +1,6 @@
 {
   "name": "react-tweet",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "React.js component for rendering tweets as they are presented on Twitter.com",
   "main": "index.js",
   "scripts": {
