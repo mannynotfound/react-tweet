@@ -16,6 +16,11 @@ been lifted from [twitter.com](https://twitter.com) and [twitter dev docs](https
 `react-tweet` uses only inline styles and while written in ES6, compiles to plain JS meant to be absorbed by any React project.
 `react-tweet` can be used a 'dumb' component for simply rendering data or could be a starting point for a more ambitious Tweet component.
 
+## Dependencies
+
+To get full video functionality, include videojs in your app. You can use the `http://vjs.zencdn.net/5-unsafe/video.js` as a CDN path.
+If you dont include videojs it should fall back to native HTML5 video.
+
 ## Usage
 
 Pass in tweet objects returned from twitter API Requests as a 'data' prop. Designed for use with
