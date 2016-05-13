@@ -35,7 +35,7 @@ export default {
     'width': '48px',
     'height': '48px',
     'borderRadius': '5px',
-    'border': '0'
+    'border': '0px'
   },
   'fullname': {
     'fontWeight': 'bold',
@@ -83,7 +83,7 @@ export default {
     'paddingTop': '1px'
   },
   'ProfileTweetActionList': {
-    'fontSize': '0',
+    'fontSize': '0em',
     'lineHeight': '1',
     'marginTop': '10px',
     'display': 'block'
@@ -99,9 +99,9 @@ export default {
     'lineHeight': '1',
     'padding': '0 2px',
     'position': 'relative',
-    'border': '0',
+    'border': '0px',
     'background': 'transparent',
-    'margin': '0',
+    'margin': '0px',
     'WebkitAppearance': 'button',
     'cursor': 'pointer'
   },
@@ -175,9 +175,9 @@ export default {
   },
   'QuoteLink': {
     'height': '100%',
-    'left': '0',
+    'left': '0px',
     'position': 'absolute',
-    'top': '0',
+    'top': '0px',
     'width': '100%'
   },
   'QuoteTweetInner': {
