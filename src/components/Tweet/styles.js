@@ -35,7 +35,7 @@ export default {
     'width': '48px',
     'height': '48px',
     'borderRadius': '5px',
-    'border': '0px'
+    'border': 0
   },
   'fullname': {
     'fontWeight': 'bold',
@@ -99,9 +99,9 @@ export default {
     'lineHeight': '1',
     'padding': '0 2px',
     'position': 'relative',
-    'border': '0px',
+    'border': 0,
     'background': 'transparent',
-    'margin': '0px',
+    'margin': 0,
     'WebkitAppearance': 'button',
     'cursor': 'pointer'
   },
@@ -175,9 +175,9 @@ export default {
   },
   'QuoteLink': {
     'height': '100%',
-    'left': '0px',
+    'left': 0,
     'position': 'absolute',
-    'top': '0px',
+    'top': 0,
     'width': '100%'
   },
   'QuoteTweetInner': {

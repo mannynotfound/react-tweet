@@ -18,6 +18,10 @@
   "author": "Manny404",
   "license": "MIT",
   "homepage": "http://art404.com",
+  "peerDependencies": {
+    "react": "0.14.0",
+    "react-dom": "0.14.0"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
@@ -37,8 +41,6 @@
   "dependencies": {
     "babel": "~5.8.23",
     "babel-runtime": "~5.8.20",
-    "react": "0.14.0",
-    "react-dom": "0.14.0",
     "react-videojs": "0.0.2",
     "twemoji": "^1.4.1",
     "twitter-text": "^1.13.2"
