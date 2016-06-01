@@ -5,7 +5,7 @@
 [live demo](https://react-tweet.herokuapp.com/)
 
 React.js component for rendering tweets as they are presented on Twitter.com. Currently themed after the Desktop
-experience with the idea of a fixed width timeline. See the [example app](http://gitub.com/artnotfound/react-tweet/example/app.js) for
+experience with the idea of a fixed width timeline. See the [example app](http://github.com/artnotfound/react-tweet/example/app.js) for
 an example of a tweet stream.
 
 ## Motivation
