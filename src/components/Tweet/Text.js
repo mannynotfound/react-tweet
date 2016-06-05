@@ -7,19 +7,15 @@ class Text extends React.Component {
   render () {
     let {data} = this.props, {text, entities} = data
 
-    if (!entities) {
-      entities = {}
-    }
-
     // remove any embedded media links
-    if (entities.media) {
+    if (entities && entities.media) {
       entities.media.forEach( e => {
         text = text.replace(e.url, '')
       })
     }
 
     // remove any quote links
-    if (data.quoted_status) {
+    if (entities && data.quoted_status) {
       entities.urls.forEach( u => {
         if (u.expanded_url.indexOf('/status/') > -1) {
           text = text.replace(u.url, '')
@@ -28,7 +24,7 @@ class Text extends React.Component {
     }
 
     // replace + style links and mentions
-    text = twitterText.autoLinkWithJSON(text, entities, {'usernameIncludeSymbol': true})
+    text = twitterText.autoLinkWithJSON(text, (entities || {}), {'usernameIncludeSymbol': true})
     text = text.replace(/href=/g, 'style="text-decoration: none;color:#6CCCF9;" href=')
 
     // replace + style emoji

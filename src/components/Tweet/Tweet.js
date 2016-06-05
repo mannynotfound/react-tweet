@@ -51,7 +51,7 @@ class Tweet extends React.Component {
     }
 
     // use Media component if media entities exist
-    if (data.entities.media) {
+    if (data.entities && data.entities.media) {
       MediaComponent = <Media media={data.entities.media} />
     }
 
