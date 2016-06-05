@@ -7,6 +7,10 @@ class Text extends React.Component {
   render () {
     let {data} = this.props, {text, entities} = data
 
+    if (!entities) {
+      entities = {}
+    }
+
     // remove any embedded media links
     if (entities.media) {
       entities.media.forEach( e => {
