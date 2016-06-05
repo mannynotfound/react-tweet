@@ -30,6 +30,8 @@ class Text extends React.Component {
     // replace + style emoji
     text = twemoji.parse(text)
     text = text.replace(/<img class="emoji"/g, '<img class="emoji" style="height:14px;margin-right:5px;"')
+    // browsers add http which causes isomorphic rendering probs
+    text = text.replace(/src="\/\/twemoji/g, 'src="http://twemoji')
 
 
     const tweetProps = {
