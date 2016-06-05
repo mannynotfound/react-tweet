@@ -3,8 +3,21 @@ import styles from './styles'
 import twemoji from 'twemoji'
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mounted: false,
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      mounted: true,
+    })
+  }
+
   createTimestamp (time) {
-    if (!time) return null
+    if (!time || !this.state.mounted) return null
 
     const parseTwitterDate = tdate => {
       let system_date = new Date(Date.parse(tdate))
