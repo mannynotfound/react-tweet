@@ -72,6 +72,7 @@ class MyTweetComponent extends React.Component {
   * Auto-linking via [twitter-text](https://www.npmjs.com/package/twitter-text)
   * Twitter Emoji support via [twemoji](https://github.com/twitter/twemoji)
   * Modal mode for images
+  * Isomorphic Rendering
 
 ## TODO:
   * Mobile style support
