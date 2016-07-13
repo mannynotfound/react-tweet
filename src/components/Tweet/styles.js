@@ -1,8 +1,6 @@
 export default {
   'tweet': {
     'backgroundColor': '#ffffff',
-    'padding': '30px 40px',
-    'position': 'relative',
     'minHeight': '51px',
     'borderBottom': '1px solid rgb(225, 232, 237)',
     'color': 'rgb(41, 47, 51)',
