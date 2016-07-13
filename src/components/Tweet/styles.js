@@ -1,6 +1,5 @@
 export default {
   'tweet': {
-    'cursor': 'default',
     'backgroundColor': '#ffffff',
     'padding': '30px 40px',
     'position': 'relative',
