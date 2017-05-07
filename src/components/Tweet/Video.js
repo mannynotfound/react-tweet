@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 import VideoJS from 'react-videojs'
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Header from './Header'
 import Text from './Text'
 import Media from './Media'
