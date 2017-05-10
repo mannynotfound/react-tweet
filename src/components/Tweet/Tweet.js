@@ -83,12 +83,12 @@ class Tweet extends React.Component {
 }
 
 Tweet.childContextTypes = {
-  'toggleModal': React.PropTypes.func,
-  'closeModal': React.PropTypes.func
+  'toggleModal': PropTypes.func,
+  'closeModal': PropTypes.func
 }
 
 Tweet.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Tweet.defaultProps = {

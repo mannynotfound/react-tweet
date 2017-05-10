@@ -25,7 +25,7 @@ class Quote extends React.Component {
 }
 
 Quote.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Quote.displayName = 'Quote'

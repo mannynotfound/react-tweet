@@ -48,7 +48,7 @@ class Text extends React.Component {
 }
 
 Text.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Text.displayName = 'Text'

@@ -19,7 +19,7 @@ class Media extends React.Component {
 }
 
 Media.propTypes = {
-  'media': React.PropTypes.array
+  'media': PropTypes.array
 }
 
 Media.defaultProps = {

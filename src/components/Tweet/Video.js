@@ -40,8 +40,8 @@ class Video extends React.Component {
 }
 
 Video.propTypes = {
-  'media': React.PropTypes.array,
-  'gif': React.PropTypes.bool
+  'media': PropTypes.array,
+  'gif': PropTypes.bool
 }
 
 Video.defaultProps = {
