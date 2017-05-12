@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 
 class Footer extends React.Component {
@@ -69,7 +70,7 @@ class Footer extends React.Component {
 }
 
 Footer.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Footer.displayName = 'Footer'

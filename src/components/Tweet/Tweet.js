@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Context from './Context'
 import Header from './Header'
 import Text from './Text'
@@ -82,12 +83,12 @@ class Tweet extends React.Component {
 }
 
 Tweet.childContextTypes = {
-  'toggleModal': React.PropTypes.func,
-  'closeModal': React.PropTypes.func
+  'toggleModal': PropTypes.func,
+  'closeModal': PropTypes.func
 }
 
 Tweet.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Tweet.defaultProps = {

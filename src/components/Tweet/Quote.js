@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 import Text from './Text'
 
@@ -24,7 +25,7 @@ class Quote extends React.Component {
 }
 
 Quote.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Quote.displayName = 'Quote'

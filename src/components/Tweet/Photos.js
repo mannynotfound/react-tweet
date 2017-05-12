@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 import {cloneDeep} from './utils'
 
@@ -201,11 +202,11 @@ class Photos extends React.Component {
 }
 
 Photos.contextTypes = {
-  'toggleModal': React.PropTypes.func
+  'toggleModal': PropTypes.func
 }
 
 Photos.propTypes = {
-  'media': React.PropTypes.array
+  'media': PropTypes.array
 }
 
 Photos.displayName = 'Photos'

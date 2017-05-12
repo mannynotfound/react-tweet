@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Photos from './Photos'
 import Video from './Video'
 
@@ -18,7 +19,7 @@ class Media extends React.Component {
 }
 
 Media.propTypes = {
-  'media': React.PropTypes.array
+  'media': PropTypes.array
 }
 
 Media.defaultProps = {

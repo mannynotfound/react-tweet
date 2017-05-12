@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 import VideoJS from 'react-videojs'
 
@@ -39,8 +40,8 @@ class Video extends React.Component {
 }
 
 Video.propTypes = {
-  'media': React.PropTypes.array,
-  'gif': React.PropTypes.bool
+  'media': PropTypes.array,
+  'gif': PropTypes.bool
 }
 
 Video.defaultProps = {

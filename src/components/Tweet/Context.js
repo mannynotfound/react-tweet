@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles'
 
 class Context extends React.Component {
@@ -24,7 +25,7 @@ class Context extends React.Component {
 }
 
 Context.propTypes = {
-  'data': React.PropTypes.object
+  'data': PropTypes.object
 }
 
 Context.displayName = 'Context'

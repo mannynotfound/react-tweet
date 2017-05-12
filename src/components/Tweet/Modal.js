@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Header from './Header'
 import Text from './Text'
 import Media from './Media'
@@ -92,12 +93,12 @@ class Modal extends React.Component {
 }
 
 Modal.contextTypes = {
-  'closeModal': React.PropTypes.func
+  'closeModal': PropTypes.func
 }
 
 Modal.propTypes = {
-  'data': React.PropTypes.object,
-  'active': React.PropTypes.number
+  'data': PropTypes.object,
+  'active': PropTypes.number
 }
 
 Modal.defaultProps = {
