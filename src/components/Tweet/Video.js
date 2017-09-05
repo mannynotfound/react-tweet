@@ -19,7 +19,7 @@ class Video extends React.Component {
       </video>
     )
 
-    if (typeof window.videojs !== 'undefined') {
+    if (typeof videojs !== 'undefined') {
       VideoComponent = (
         <VideoJS src={videoSrc} controls={!gif} autoPlay={gif} loop={gif} style={styles.video}>
           {'Your browser does not support the '}<code>{'video '}</code>{'element.'}
