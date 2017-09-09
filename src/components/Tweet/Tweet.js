@@ -42,7 +42,7 @@ class Tweet extends React.Component {
 
   render () {
     const {modalActive, modalIndex} = this.state
-    let {data} = this.props, isRT = false
+    let {data, linkProps} = this.props, isRT = false
     let MediaComponent = null, QuoteComponent = null
 
     // use retweet as data if its a RT
@@ -63,18 +63,18 @@ class Tweet extends React.Component {
 
     // use Quote component if quoted status exists
     if (data.quoted_status) {
-      QuoteComponent = <Quote data={data.quoted_status} />
+      QuoteComponent = <Quote data={data.quoted_status} linkProps={linkProps}/>
     }
 
     return (
       <div className="tweet" style={styles.tweet}>
         {isRT ? <Context {... this.props} /> : null}
         <div className="content" style={styles.content}>
-          <Header data={data} />
+          <Header data={data} linkProps={linkProps} />
           <Text data={data} />
           {MediaComponent}
           {QuoteComponent}
-          <Footer data={data} />
+          <Footer data={data} linkProps={linkProps} />
         </div>
         {modalActive ? <Modal data={data} modalIndex={modalIndex} /> : null}
       </div>
@@ -88,14 +88,16 @@ Tweet.childContextTypes = {
 }
 
 Tweet.propTypes = {
-  'data': PropTypes.object
+  'data': PropTypes.object,
+  'linkProps': PropTypes.object
 }
 
 Tweet.defaultProps = {
   'data': {
     'entities': {},
     'user': {}
-  }
+  },
+  'linkProps': {}
 }
 
 export default Tweet
