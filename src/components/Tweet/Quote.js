@@ -5,11 +5,11 @@ import Text from './Text'
 
 class Quote extends React.Component {
   render () {
-    const {data} = this.props
+    const {data, linkProps} = this.props
 
     return (
       <div className="QuoteTweet" style={styles.QuoteTweet}>
-        <a className="QuoteTweet-link" style={styles.QuoteLink} href={`https://twitter.com/${data.user.screen_name}/status/${data.id_str}`} />
+        <a className="QuoteTweet-link" style={styles.QuoteLink} href={`https://twitter.com/${data.user.screen_name}/status/${data.id_str}`} {...linkProps} />
         <div className="QuoteTweet-innerContainer" style={styles.QuoteTweetInner}>
           <div className="QuoteTweet-originalAuthor" style={styles.QuoteTweetAuthor}>
             <b>{data.user.name}</b>

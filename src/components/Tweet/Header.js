@@ -36,7 +36,7 @@ class Header extends React.Component {
   }
 
   render () {
-    const {data} = this.props
+    const {data, linkProps} = this.props
     const timestamp = this.createTimestamp(data.created_at)
 
     let {name} = data.user
@@ -45,7 +45,7 @@ class Header extends React.Component {
 
     return (
       <div className="header">
-        <a className="account-group" style={styles.accountGroup} href={`http://twitter.com/${data.user.screen_name}`}>
+        <a className="account-group" style={styles.accountGroup} href={`http://twitter.com/${data.user.screen_name}`} {...linkProps}>
           <img className="avatar" src={data.user.profile_image_url} style={styles.avatar} />
           <strong className="fullname" style={styles.fullname}>{data.user.name}{' '}</strong>
           <span>&rlm;</span>
@@ -55,7 +55,7 @@ class Header extends React.Component {
           </span>
         </a>
         <small className="time" style={styles.time}>
-          <a href={`http://twitter.com/${data.user.screen_name}/status/${data.id_str}`} className="tweet-timestamp" style={styles.timestamp}>
+          <a href={`http://twitter.com/${data.user.screen_name}/status/${data.id_str}`} className="tweet-timestamp" style={styles.timestamp} {...linkProps}>
             {' • '}{timestamp}
           </a>
         </small>
