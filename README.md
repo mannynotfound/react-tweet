@@ -33,7 +33,7 @@ import React from 'react'
 import Tweet from 'react-tweet'
 
 const tweetData = {
-  id: 'XXX',
+  id_str: 'XXX',
   user: {
     name: 'XXX',
     screen_name: 'XXX',
@@ -54,8 +54,11 @@ const tweetData = {
 
 class MyTweetComponent extends React.Component {
   render () {
+    // use linkProps if you want to pass attributes to all links
+    const linkProps = {target: '_blank', rel: 'noreferrer'}
+
     return (
-      <Tweet data={tweetData} />
+      <Tweet data={tweetData} linkProps={linkProps} />
     )
   }
 }
