@@ -68,6 +68,7 @@ class Tweet extends React.Component {
 
     return (
       <div className="tweet" style={styles.tweet}>
+        <a style={styles.link} href={`https://twitter.com/${data.user.screen_name}/status/${data.id_str}`} {...linkProps}>
         {isRT ? <Context {... this.props} /> : null}
         <div className="content" style={styles.content}>
           <Header data={data} linkProps={linkProps} />
@@ -77,6 +78,7 @@ class Tweet extends React.Component {
           <Footer data={data} linkProps={linkProps} />
         </div>
         {modalActive ? <Modal data={data} modalIndex={modalIndex} /> : null}
+        </a>
       </div>
     )
   }
