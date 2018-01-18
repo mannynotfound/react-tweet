@@ -21,8 +21,8 @@ module.exports = {
         loaders: ['babel?optional[]=runtime&cacheDirectory']
       },
       {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass')
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style', 'css')
       },
       {
         test: /\.json$/,
