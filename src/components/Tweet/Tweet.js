@@ -88,7 +88,9 @@ class Tweet extends React.Component {
         {isRT ? <Context {... this.props} /> : null}
         <div className="content" style={styles.content}>
           <Header data={data} linkProps={linkProps} />
-          <Text data={data} />
+          <a style={styles.link} href={`https://twitter.com/${data.user.screen_name}/status/${data.id_str}`} {...linkProps}>
+            <Text data={data} />
+          </a>
           {MediaComponent}
           {QuoteComponent}
           <Footer data={data} linkProps={linkProps} />
