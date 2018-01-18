@@ -57,13 +57,6 @@ class Footer extends React.Component {
               </div>
             </button>
           </div>
-          <div className="ProfileTweet-action" style={styles.ProfileTweetAction}>
-            <button className="ProfileTweet-actionButton" style={styles.ProfileTweetActionBtn}>
-              <div className="IconContainer" style={styles.IconContainer}>
-                <span className="Icon Icon--more" style={styles.Icon} />
-              </div>
-            </button>
-          </div>
         </a>
       </div>
     )
