@@ -1,13 +1,13 @@
 {
   "name": "react-tweet",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "React.js component for rendering tweets as they are presented on Twitter.com",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run prepublish",
     "prepublish": "npm run build:js",
-    "build:js": "NODE_ENV=development babel --plugins transform-runtime ./src/components -d ./lib",
+    "build:js": "babel --plugins transform-runtime ./src/components -d ./lib",
     "start": "webpack-dev-server --hot --inline",
     "build-dev": "webpack -d"
   },
@@ -45,6 +45,7 @@
     "babel-loader": "6.2.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-es2015": "6.24.1",
     "react-video-wrapper": "1.0.3",
     "react-videojs": "0.0.3",
     "twemoji": "1.4.1",
