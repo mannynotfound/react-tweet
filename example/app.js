@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Tweet from '../src/components/Tweet/Tweet.js';
-import './_app.scss';
+import './_app.css';
 import tweets from './tweets'
 
 const linkProps = { target: '_blank' };
