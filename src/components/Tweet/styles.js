@@ -151,7 +151,8 @@ export default {
   'AdaptiveMediaBadge': {
     'background': 'rgba(0, 0, 0, 0.3)',
     'borderRadius': '3px',
-    'bottom': '8px',
+    'bottom': '52px',
+    'left': '80px',
     'boxSizing': 'border-box',
     'MozBoxSizing': 'border-box',
     'color': '#fff',
@@ -202,7 +203,7 @@ export default {
   'video': {
     'width': '100%',
     'verticalAlign': 'bottom',
-    'maxHeight': '506px',
+    'maxHeight': '508px',
     'objectFit': 'contain',
     'background': '#000000'
   },
