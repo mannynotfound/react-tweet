@@ -70,6 +70,7 @@ export default {
   'tweetText': {
     'whiteSpace': 'pre-wrap',
     'wordWrap': 'break-word',
+    'color': '#14171a',
     'margin': 0
   },
   'footer': {
