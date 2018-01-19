@@ -138,12 +138,14 @@ export default {
   },
   'AdaptiveMedia': {
     'display': 'inline-block',
-    'maxHeight': '506px',
+    'maxHeight': '508px',
+    'maxWidth': '508px',
     'margin': '10px 0 0 0',
-    'position': 'relative',
     'overflow': 'hidden',
+    'border': '1px solid rgba(0,0,0,0.1)',
     'borderRadius': '5px',
     'verticalAlign': 'top',
+    'textAlign': 'center',
     'width': '100%'
   },
   'AdaptiveMediaBadge': {

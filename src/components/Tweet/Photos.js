@@ -24,7 +24,7 @@ class Photos extends React.Component {
     media.forEach( (m, i) => {
       // set initial sizes / styles
       let containStyle = {'width': '100%', 'position': 'relative', 'overflow': 'hidden'}
-      let photoStyle = {'width': '100%', 'position': 'relative'}
+      let photoStyle = {'width': '100%', 'position': 'relative', 'verticalAlign': 'bottom'}
       let mediaHeight = m.sizes.large.h, mediaWidth = m.sizes.large.w
 
       /*
