@@ -98,7 +98,7 @@ class Modal extends React.Component {
     else {
       if (h > 650) {
         modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
-        modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
+        imgStyle.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
       }
       else {
         modalWrap.width = `${w}px`
