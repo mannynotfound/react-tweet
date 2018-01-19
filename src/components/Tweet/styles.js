@@ -191,7 +191,7 @@ export default {
   },
   'QuoteTweetText': {
     'marginTop': '3px',
-    'maxHeight': '72px',
+    'maxHeight': '78px',
     'maxWidth': '100%',
     'overflow': 'hidden',
     'whiteSpace': 'pre-wrap',
