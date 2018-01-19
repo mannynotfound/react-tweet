@@ -198,7 +198,11 @@ export default {
     'wordWrap': 'break-word'
   },
   'video': {
-    'width': '100%'
+    'width': '100%',
+    'verticalAlign': 'bottom',
+    'maxHeight': '506px',
+    'objectFit': 'contain',
+    'background': '#000000'
   },
   'Modal': {
     'position': 'fixed',
