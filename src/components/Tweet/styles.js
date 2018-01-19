@@ -114,7 +114,7 @@ export default {
   },
   'IconContainer': {
     'display': 'inline-block',
-    'verticalAlign': 'text-bottom',
+    'verticalAlign': 'middle',
   },
   'IconTextContainer': {
     'display': 'inline-block',
