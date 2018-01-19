@@ -34,8 +34,21 @@ class Modal extends React.Component {
       media = data.extended_entities.media[modalIndex]
     }
 
-    let tweetStyle = cloneDeep(styles.tweet)
-    tweetStyle.padding = 0
+    const tweetStyle = {
+      'backgroundColor': '#ffffff',
+      'minHeight': '51px',
+      'minWidth': '350px',
+      'color': 'white',
+      'fontFamily': '"Helvetica Neue", "Helvetica", "Arial", "sans-serif"',
+      'fontSize': '14px',
+      'lineHeight': '20px',
+      'listStyleImage': 'none',
+      'listStylePosition': 'outisde',
+      'listStyleType': 'none',
+      'position': 'relative',
+      'textAlign': 'start'
+    }
+
     let contentStyle = cloneDeep(styles.content)
     contentStyle.padding = styles.tweet.padding
 
@@ -43,14 +56,15 @@ class Modal extends React.Component {
       'position': 'relative',
       'display': 'inline-block',
       'verticalAlign': 'middle',
-      'width': media.sizes.large.w,
       'margin': '0 auto',
       'zIndex': 20,
-      'minWidth': '590px'
+      'marginTop': '50px',
+      'borderRadius': '5px',
+      'overflow': 'hidden',
     }
 
     let imgStyle = {
-      'width': 'auto',
+      'width': '100%',
       'margin': '0 auto',
       'display': 'block'
     }
@@ -60,14 +74,34 @@ class Modal extends React.Component {
       'background': 'black'
     }
 
-    if (media.sizes.large.h > window.innerHeight) {
-      let newHeight = (window.innerHeight / 100) * 80
+    let closeModalStyle = {
+      'height': '50px',
+      'width': '100%',
+      'display': 'flex',
+      'justifyContent': 'flex-end',
+      'alignItems': 'center',
+      'background': 'white',
+    }
 
-      imgStyle = {
-        'height': `${newHeight}px`,
-        'width': 'auto',
-        'display': 'block',
-        'margin': '0 auto'
+    const w = media.sizes.large.w;
+    const h = media.sizes.large.h;
+
+    if (w > 1000) {
+      if (h > 650) {
+        imgStyle.width, modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
+      } 
+      else {
+        modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
+        imgStyle.height = `${(media.sizes.large.h / media.sizes.large.w) * 1000}px`
+      }
+    }
+    else {
+      if (h > 650) {
+        modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
+        modalWrap.width = `${(media.sizes.large.w / media.sizes.large.h) * 650}px`
+      }
+      else {
+        modalWrap.width = `${w}px`
       }
     }
 
@@ -76,6 +110,12 @@ class Modal extends React.Component {
         <span style={{'height': '100%', 'display': 'inline-block', 'verticalAlign': 'middle'}} />
         <div className="ModalClose" style={styles.ModalClose} onClick={this.close.bind(this)} />
         <div className="Modal-wrap" style={modalWrap}>
+          <div className="closeModal" style={closeModalStyle}  onClick={this.close.bind(this)}>
+            <svg fill="#657786" style={{'margin': '10px'}} height="28" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </div>
           <div className="tweet" style={tweetStyle}>
             <div className="media-wrap" style={imgWrapStyle}>
               <img src={media.media_url} style={imgStyle} />
