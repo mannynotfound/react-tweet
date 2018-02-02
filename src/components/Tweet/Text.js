@@ -6,7 +6,8 @@ import twitterText from 'twitter-text'
 
 class Text extends React.Component {
   render () {
-    let {data} = this.props, {text, entities} = data
+    let {data} = this.props
+    let {text, entities, extended_entities} = data
 
     // remove any embedded media links
     if (entities && entities.media) {
@@ -33,6 +34,13 @@ class Text extends React.Component {
     text = text.replace(/<img class="emoji"/g, '<img class="emoji" style="height:14px;margin-right:5px;"')
     // browsers add http which causes isomorphic rendering probs
     text = text.replace(/src="\/\/twemoji/g, 'src="http://twemoji')
+
+    // remove any extended entities links
+    if (extended_entities && extended_entities.media) {
+      extended_entities.media.forEach(e => {
+        text = text.replace(e.display_url, '')
+      })
+    }
 
 
     const tweetProps = {
