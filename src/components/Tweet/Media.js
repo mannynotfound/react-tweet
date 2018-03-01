@@ -9,7 +9,7 @@ class Media extends React.Component {
       case 'photo':
         return <Photos {... this.props} />
       case 'video':
-        return <Video  {... this.props} />
+        return <Video {... this.props} />
       case 'animated_gif':
         return <Video gif={true} {... this.props} />
       default:
