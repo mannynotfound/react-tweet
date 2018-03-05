@@ -70,12 +70,12 @@ class Tweet extends React.Component {
 
     // use Media component if media entities exist
     if (data.entities && data.entities.media) {
-      MediaComponent = <Media media={data.entities.media} />
+      MediaComponent = <Media  autoPlay={this.props.autoPlay} media={data.entities.media} />
     }
 
     // extended_entities override, these are multi images, videos, gifs
     if (data.extended_entities && data.extended_entities.media) {
-      MediaComponent = <Media media={data.extended_entities.media} />
+      MediaComponent = <Media autoPlay={this.props.autoPlay} media={data.extended_entities.media} />
     }
 
     // use Quote component if quoted status exists
