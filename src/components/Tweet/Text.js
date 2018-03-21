@@ -27,7 +27,7 @@ class Text extends React.Component {
 
     // replace + style links and mentions
     text = twitterText.autoLinkWithJSON(text, (entities || {}), {'usernameIncludeSymbol': true})
-    text = text.replace(/href=/g, 'style="text-decoration: none;color:#6CCCF9;" href=')
+    text = text.replace(/href=/g, 'style="text-decoration: none;color:#1da1f2;" href=')
 
     // replace + style emoji
     text = twemoji.parse(text)

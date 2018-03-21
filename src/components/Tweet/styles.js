@@ -2,12 +2,13 @@ export default {
   'tweet': {
     'backgroundColor': '#ffffff',
     'minHeight': '51px',
-    'borderBottom': '1px solid rgb(225, 232, 237)',
-    'color': 'rgb(41, 47, 51)',
-    'cursor': 'pointer',
+    'maxWidth': '588px',
+    'minWidth': '350px',
+    'borderBottom': '1px solid #e6ecf0',
+    'color': '#14171a',
     'fontFamily': '"Helvetica Neue", "Helvetica", "Arial", "sans-serif"',
     'fontSize': '14px',
-    'lineHeight': '18px',
+    'lineHeight': '20px',
     'listStyleImage': 'none',
     'listStylePosition': 'outisde',
     'listStyleType': 'none',
@@ -31,18 +32,18 @@ export default {
     'marginLeft': '-58px',
     'width': '48px',
     'height': '48px',
-    'borderRadius': '5px',
+    'borderRadius': '24px',
     'border': 0
   },
   'fullname': {
     'fontWeight': 'bold',
-    'color': '#292f33'
+    'color': '#14171a'
   },
   'username': {
     'direction': 'ltr',
     'unicodeBidi': 'embed',
-    'fontSize': '13px',
-    'color': '#8899a6'
+    'fontSize': '14px',
+    'color': '#657786'
   },
   's': {
     'color': '#b1bbc3',
@@ -52,25 +53,26 @@ export default {
     'fontWeight': 'normal'
   },
   'time': {
-    'color': '#8899a6'
+    'color': '#657786'
   },
   'retweet': {
-    'color': '#8899a6',
-    'fontSize': '13px',
+    'color': '#657786',
+    'fontSize': '12px',
+    'lineHeight': '16.5px',
     'marginLeft': '8px'
   },
   'link': {
-    'color': '#8899a6',
     'textDecoration': 'none'
   },
   'timestamp': {
-    'fontSize': '13px',
+    'fontSize': '14px',
     'textDecoration': 'none',
     'color': '#8899a6'
   },
   'tweetText': {
     'whiteSpace': 'pre-wrap',
     'wordWrap': 'break-word',
+    'color': '#14171a',
     'margin': 0
   },
   'footer': {
@@ -83,6 +85,7 @@ export default {
     'fontSize': '0em',
     'lineHeight': '1',
     'marginTop': '10px',
+    'marginBottom': '2px',
     'display': 'block'
   },
   'ProfileTweetAction': {
@@ -90,7 +93,6 @@ export default {
     'width': '80px'
   },
   'ProfileTweetActionBtn': {
-    'color': '#aab8c2',
     'display': 'inline-block',
     'fontSize': '16px',
     'lineHeight': '1',
@@ -103,27 +105,25 @@ export default {
     'cursor': 'pointer'
   },
   'ProfileTweetActionCount': {
-    'color': '#aab8c2',
+    'color': '#657786',
     'display': 'inline-block',
     'fontSize': '12px',
     'fontWeight': 'bold',
     'marginLeft': '6px',
     'position': 'relative',
-    'top': '-1px'
   },
   'IconContainer': {
     'display': 'inline-block',
-    'height': '23px'
+    'verticalAlign': 'middle',
+  },
+  'IconTextContainer': {
+    'display': 'inline-block',
   },
   'Icon': {
     'background': 'transparent',
     'display': 'inline-block',
     'fontStyle': 'normal',
-    'verticalAlign': 'middle',
     'position': 'relative',
-    'width': '23px',
-    'height': '23px',
-    'fill': '#aab8c2',
   },
   'IconContext': {
     'background': '#77b255',
@@ -138,18 +138,21 @@ export default {
   },
   'AdaptiveMedia': {
     'display': 'inline-block',
-    'maxHeight': '506px',
+    'maxHeight': '508px',
+    'maxWidth': '508px',
     'margin': '10px 0 0 0',
-    'position': 'relative',
     'overflow': 'hidden',
+    'border': '1px solid rgba(0,0,0,0.1)',
     'borderRadius': '5px',
     'verticalAlign': 'top',
+    'textAlign': 'center',
     'width': '100%'
   },
   'AdaptiveMediaBadge': {
     'background': 'rgba(0, 0, 0, 0.3)',
     'borderRadius': '3px',
-    'bottom': '8px',
+    'bottom': '52px',
+    'left': '80px',
     'boxSizing': 'border-box',
     'MozBoxSizing': 'border-box',
     'color': '#fff',
@@ -164,11 +167,14 @@ export default {
     'width': '100%'
   },
   'QuoteTweet': {
-    'marginTop': '20px',
-    'border': 'solid 1px #e1e8ed',
+    'marginTop': '12px',
+    'border': 'solid 1px #e6ecf0',
     'cursor': 'pointer',
     'borderRadius': '4px',
     'position': 'relative'
+  },
+  'QuoteTweet:hover': {
+    'border': 'solid 1px aab8c2'
   },
   'QuoteLink': {
     'height': '100%',
@@ -188,14 +194,18 @@ export default {
   },
   'QuoteTweetText': {
     'marginTop': '3px',
-    'maxHeight': '72px',
+    'maxHeight': '78px',
     'maxWidth': '100%',
     'overflow': 'hidden',
     'whiteSpace': 'pre-wrap',
     'wordWrap': 'break-word'
   },
   'video': {
-    'width': '100%'
+    'width': '100%',
+    'verticalAlign': 'bottom',
+    'maxHeight': '508px',
+    'objectFit': 'contain',
+    'background': '#000000'
   },
   'Modal': {
     'position': 'fixed',

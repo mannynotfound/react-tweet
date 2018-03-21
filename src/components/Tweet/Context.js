@@ -9,12 +9,13 @@ class Context extends React.Component {
     return (
       <div className="context" style={styles.context}>
         <div className="tweet-context">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 72" style={styles.IconContext}>
-            <path d="M70.676 36.644C70.166 35.636 69.13 35 68 35h-7V19c0-2.21-1.79-4-4-4H34c-2.21 0-4 1.79-4 4s1.79 4 4 4h18c.552 0 .998.446 1 .998V35h-7c-1.13 0-2.165.636-2.676 1.644-.51 1.01-.412 2.22.257 3.13l11 15C55.148 55.545 56.046 56 57 56s1.855-.455 2.42-1.226l11-15c.668-.912.767-2.122.256-3.13zM40 48H22c-.54 0-.97-.427-.992-.96L21 36h7c1.13 0 2.166-.636 2.677-1.644.51-1.01.412-2.22-.257-3.13l-11-15C18.854 15.455 17.956 15 17 15s-1.854.455-2.42 1.226l-11 15c-.667.912-.767 2.122-.255 3.13C3.835 35.365 4.87 36 6 36h7l.012 16.003c.002 2.208 1.792 3.997 4 3.997h22.99c2.208 0 4-1.79 4-4s-1.792-4-4-4z"/>
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 24 24" style={{'vertical-align': 'sub'}}> 
+          <path opacity="0" d="M0 0h24v24H0z"></path> 
+          <path fill="rgb(101, 119, 134)" d="M23.615 15.477c-.47-.47-1.23-.47-1.697 0l-1.326 1.326V7.4c0-2.178-1.772-3.95-3.95-3.95h-5.2c-.663 0-1.2.538-1.2 1.2s.537 1.2 1.2 1.2h5.2c.854 0 1.55.695 1.55 1.55v9.403l-1.326-1.326c-.47-.47-1.23-.47-1.697 0s-.47 1.23 0 1.697l3.374 3.375c.234.233.542.35.85.35s.613-.116.848-.35l3.375-3.376c.467-.47.467-1.23-.002-1.697zM12.562 18.5h-5.2c-.854 0-1.55-.695-1.55-1.55V7.547l1.326 1.326c.234.235.542.352.848.352s.614-.117.85-.352c.468-.47.468-1.23 0-1.697L5.46 3.8c-.47-.468-1.23-.468-1.697 0L.388 7.177c-.47.47-.47 1.23 0 1.697s1.23.47 1.697 0L3.41 7.547v9.403c0 2.178 1.773 3.95 3.95 3.95h5.2c.664 0 1.2-.538 1.2-1.2s-.535-1.2-1.198-1.2z"></path> 
+       </svg>
           <span className="retweet-text" style={styles.retweet}>
-            <a className="pretty-link" href={`http://twitter.com/${data.user.screen_name}`} style={styles.link} {...linkProps}>
-              <b style={styles.b}>{data.user.name}</b>
+            <a className="pretty-link" href={`https://twitter.com/${data.user.screen_name}`} style={{'textDecoration': 'none', 'color': '#657786'}} {...linkProps}>
+              {data.user.name}
             </a>
             {' Retweeted'}
           </span>
