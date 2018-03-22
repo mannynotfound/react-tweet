@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles'
-import VideoJS from 'react-videojs'
+import VideoJS from 'react-video-wrapper'
 
 class Video extends React.Component {
   render () {
