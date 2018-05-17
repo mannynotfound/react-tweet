@@ -49,7 +49,7 @@ class Tweet extends React.Component {
     if ('full_text' in data) {
       data.text = data.full_text;
 
-      if (is_quote_status) {
+      if ('quoted_status' in data) {
         data.quoted_status.text = data.quoted_status.full_text;
       }
       
@@ -70,10 +70,10 @@ class Tweet extends React.Component {
     }
     if ('quoted_status' in data) {
       if ('extended_tweet' in data.quoted_status) {
-      data.quoted_status.text = data.quoted_status.extended_tweet.full_text;
-      data.quoted_status.entities = data.quoted_status.extended_tweet.entities;
-      data.quoted_status.extended_entities = data.quoted_status.extended_tweet.extended_entities;
-      data.quoted_status.display_text_range = data.quoted_status.extended_tweet.display_text_range;
+        data.quoted_status.text = data.quoted_status.extended_tweet.full_text;
+        data.quoted_status.entities = data.quoted_status.extended_tweet.entities;
+        data.quoted_status.extended_entities = data.quoted_status.extended_tweet.extended_entities;
+        data.quoted_status.display_text_range = data.quoted_status.extended_tweet.display_text_range;
       }
     }
     if ('retweeted_status' in data) {
