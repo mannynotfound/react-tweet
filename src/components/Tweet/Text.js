@@ -17,7 +17,7 @@ class Text extends React.Component {
     }
 
     // remove any quote links
-    if (entities && data.quoted_status) {
+    if (entities && entities.urls && data.quoted_status) {
       entities.urls.forEach( u => {
         if (u.expanded_url.indexOf('/status/') > -1) {
           text = text.replace(u.url, '')
